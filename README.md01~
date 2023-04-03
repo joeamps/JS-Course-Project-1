@@ -1,1 +1,28 @@
 # JS-Course-Project-1
+The Goal of this project was to add functionality to a web page
+
+The instructor provided the HTML/CSS and we had to implement JS functionality   
+    -Used DOM manipulation on input boxes and buttons to output the desired outcome
+
+User functionality:
+    -The user is supposed to input a number and guess a number from 1-20
+    -Computer checks and if number is not correct -1 point
+    -Loop repeats till user guesses the right number
+    -Highscore logged 
+    -Again button to reset the game but keep the Highscore
+
+Coding Process:
+    -Game logic used: if statements to determine if the number guessed was > or < 20.
+    -DOM manipulation used to log user's guess and display if guess was too low or too high
+    -Once right number was guessed, used dom manipulation to display green background and show number in the center
+    -Learning how to use functions to cleanup duplicate code EX: 
+         document.querySelector('.message').textContent = message; 
+         can be converted to:
+
+        const displayMessage = function (message) {
+        document.querySelector('.message').textContent = message;
+        }; 
+
+        and be reused as...
+        
+        displayMessage('...instert message here')
